@@ -560,10 +560,10 @@ ctr+shift+p 调出插件窗口
         
           
           1.三元操作符当想写if…else语句时，使用三元操作符来代替。1234567const x = 20;let answer;if (x &gt; 10) &#123;    answer = 'is greater';&#125; else &#123;    answer = 'is lesser';&#125;
-简写1const answer = x &gt; 10 ? &apos;is greater&apos; : &apos;is lesser&apos;;
-也可以嵌套if语句：1const big = x &gt; 10 ? &quot; greater 10&quot; : x
-2.短路求值简写方式当给一个变量分配另一个值时，想确定源始值不是null，undefined或空值。可以写撰写一个多重条件的if语句。123if (variable1 !== null || variable1 !== undefined || variable1 !== &apos;&apos;) &#123;     let variable2 = variable1;&#125;
-或者可以使用短路求值方法：1const variable2 = variable1  || &apos;new&apos;;
+简写1const answer = x &gt; 10 ? 'is greater' : 'is lesser';
+也可以嵌套if语句：1const big = x &gt; 10 ? " greater 10" : x
+2.短路求值简写方式当给一个变量分配另一个值时，想确定源始值不是null，undefined或空值。可以写撰写一个多重条件的if语句。123if (variable1 !== null || variable1 !== undefined || variable1 !== '') &#123;     let variable2 = variable1;&#125;
+或者可以使用短路求值方法：1const variable2 = variable1  || 'new';
 3.声明变量简写方法123let x;let y;let z = 3;
 简写方法：
 1let x, y, z=3;
@@ -578,7 +578,7 @@ ctr+shift+p 调出插件窗口
 简写：
 1for (let index in allImgs)
 也可以使用Array.forEach：
-12345678function logArrayElements(element,
+12345678function logArrayElements(element, index, array) &#123;  console.log("a[" + index + 
           ...
           <!--noindex-->
           <div class="post-button text-center">
