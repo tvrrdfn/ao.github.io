@@ -329,7 +329,7 @@
               
                 
                 <a class="post-title-link" href="/test/" itemprop="url">
-                  test
+                  删除已安装插件
                 </a>
               
             
@@ -345,8 +345,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-22T15:19:49+08:00">
-                2017-06-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-23T10:50:00+08:00">
+                2017-06-23
               </time>
             
 
@@ -355,6 +355,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编辑器/" itemprop="url" rel="index">
+                    <span itemprop="name">编辑器</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -383,10 +405,12 @@
       
         
           
-          testcest1$ dadad
-More
-dadafafafafafafaf
-test2123dadaadadafa
+          sublime 删除已安装插件
+ctr+shift+p 调出插件窗口
+然后输入remove, 选择remove Package
+再输入要删除的插件名称，或者在下拉列表中选择要删除的插件名称
+
+
           
           <!--noindex-->
           <div class="post-button text-center">
@@ -459,7 +483,7 @@ test2123dadaadadafa
               
                 
                 <a class="post-title-link" href="/hello-world/" itemprop="url">
-                  Hello World
+                  19 个 JavaScript 常用的简写技术
                 </a>
               
             
@@ -475,7 +499,7 @@ test2123dadaadadafa
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-22T11:59:11+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-22T11:59:00+08:00">
                 2017-06-22
               </time>
             
@@ -485,6 +509,28 @@ test2123dadaadadafa
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">javaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -513,17 +559,27 @@ test2123dadaadadafa
       
         
           
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More info: Server
-Generate static files1$ hexo generate
-More info: Generating
-Deploy to remote sites1$ hexo deploy
-More info: Deployment
-
-          
+          1.三元操作符当想写if…else语句时，使用三元操作符来代替。1234567const x = 20;let answer;if (x &gt; 10) &#123;    answer = 'is greater';&#125; else &#123;    answer = 'is lesser';&#125;
+简写1const answer = x &gt; 10 ? &apos;is greater&apos; : &apos;is lesser&apos;;
+也可以嵌套if语句：1const big = x &gt; 10 ? &quot; greater 10&quot; : x
+2.短路求值简写方式当给一个变量分配另一个值时，想确定源始值不是null，undefined或空值。可以写撰写一个多重条件的if语句。123if (variable1 !== null || variable1 !== undefined || variable1 !== &apos;&apos;) &#123;     let variable2 = variable1;&#125;
+或者可以使用短路求值方法：1const variable2 = variable1  || &apos;new&apos;;
+3.声明变量简写方法123let x;let y;let z = 3;
+简写方法：
+1let x, y, z=3;
+4.if存在条件简写方法1if (likeJavaScript === true)
+简写：
+1if (likeJavaScript)
+只有likeJavaScript是真值时，二者语句才相等如果判断值不是真值，则可以这样：
+1234let a;if ( a !== true ) &#123;// do something...&#125;
+简写：
+1234let a;if ( !a ) &#123;// do something...&#125;
+5.JavaScript循环简写方法1for (let i = 0; i &lt; allImgs.length; i++)
+简写：
+1for (let index in allImgs)
+也可以使用Array.forEach：
+12345678function logArrayElements(element,
+          ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/hello-world/#more" rel="contents">
@@ -615,7 +671,25 @@ More info: Deployment
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
