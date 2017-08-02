@@ -329,7 +329,7 @@
               
                 
                 <a class="post-title-link" href="/ES6/" itemprop="url">
-                  ES6
+                  ES6新特性列表
                 </a>
               
             
@@ -382,31 +382,20 @@
 
       
         
-          
-          ES6新特性列表相比ES5，ES6提供了太多的更新，简单说来，主要为以下方面（大家可以依据自己不算清晰的点选择性查看本文）：
-
-Arrows,箭头函数，
-Classes，类
-Enhanced object literals，增强的对象字面值
-Template strings：模板字符串
-Destructuring：解构
-Default + rest + spread：参数默认值，rest参数,扩展运算符
-Let + const:命名声明的新方式
-Iterators + for..of：遍历器
-Generators：生成器
-Unicode：更广泛的编码支持
-Modules：语言层面上支持的模块机制
-Module loaders：模块加载器
-Map + set + weakmap + weakset：新的数据结构
-Proxies：代理器
-Symbols：新的基本类型，独一无二的值
-Subclassable built-ins：类的继承
-Promises：
-Math + number + string + array + object apis：拓展了一些内置对象的方法
-Binary and octal literals：二进制八进制字面量
-Reflect api：操作对象的新api
-Tail calls:尾调用Arrows箭头函数箭头函数使用类似于=&gt;这样的语法定义函数，支持表达式模式和语句模式，不过其最大特点在于和父作用域具有一样的this。我们知道普通函数的this 既不指向函数自身也不指向函数的词法作用域，this 实际上是在函数被调用时发生的绑定，它指向什么完全取决于函数在哪里被调用。使用箭头函数时再也不用担心this跳来跳去了。此外如果箭头函数如果定义在另一个函数里面，箭头函数会共享它父函数的arguments变量。1234567891011121314151617181920212223242526272829303132333435// 表达式模式箭头函数var odds = evens.map(v =&gt; v + 1);var nums = evens.map((v, i) =&gt; v + i);var pairs = evens.map(v =&gt; (&#123;even: v, odd: v + 1&#125;));// 语句模式箭
-          ...
+          <p>相比ES5，ES6提供了太多的更新，简单说来，主要为以下方面（大家可以依据自己不算清晰的点选择性查看本文）：</p>
+<ul>
+<li>Arrows,箭头函数，</li>
+<li>Classes，类</li>
+<li>Enhanced object literals，增强的对象字面值</li>
+<li>Template strings：模板字符串</li>
+<li>Destructuring：解构</li>
+<li>Default + rest + spread：参数默认值，rest参数,扩展运算符</li>
+<li>Let + const:命名声明的新方式</li>
+<li>Iterators + for..of：遍历器</li>
+<li>Generators：生成器</li>
+<li>Unicode：更广泛的编码支持</li>
+<li>Modules：语言层面上支持的模块机制</li>
+<li>Module loaders：模块加载器
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/ES6/#more" rel="contents">
@@ -553,14 +542,11 @@ Tail calls:尾调用Arrows箭头函数箭头函数使用类似于=&gt;这样的�
 
       
         
-          
-          
-ctr+shift+p 调出插件窗口
-然后输入remove, 选择remove Package
-再输入要删除的插件名称，或者在下拉列表中选择要删除的插件名称
-
-
-          
+          <ol>
+<li>ctr+shift+p 调出插件窗口</li>
+<li>然后输入remove, 选择remove Package</li>
+<li>再输入要删除的插件名称，或者在下拉列表中选择要删除的插件名称</li>
+</ol>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/test/#more" rel="contents">
@@ -707,28 +693,7 @@ ctr+shift+p 调出插件窗口
 
       
         
-          
-          1.三元操作符当想写if…else语句时，使用三元操作符来代替。1234567const x = 20;let answer;if (x &gt; 10) &#123;    answer = 'is greater';&#125; else &#123;    answer = 'is lesser';&#125;
-简写1const answer = x &gt; 10 ? 'is greater' : 'is lesser';
-也可以嵌套if语句：1const big = x &gt; 10 ? " greater 10" : x
-2.短路求值简写方式当给一个变量分配另一个值时，想确定源始值不是null，undefined或空值。可以写撰写一个多重条件的if语句。123if (variable1 !== null || variable1 !== undefined || variable1 !== '') &#123;     let variable2 = variable1;&#125;
-或者可以使用短路求值方法：1const variable2 = variable1  || 'new';
-3.声明变量简写方法123let x;let y;let z = 3;
-简写方法：
-1let x, y, z=3;
-4.if存在条件简写方法1if (likeJavaScript === true)
-简写：
-1if (likeJavaScript)
-只有likeJavaScript是真值时，二者语句才相等如果判断值不是真值，则可以这样：
-1234let a;if ( a !== true ) &#123;// do something...&#125;
-简写：
-1234let a;if ( !a ) &#123;// do something...&#125;
-5.JavaScript循环简写方法1for (let i = 0; i &lt; allImgs.length; i++)
-简写：
-1for (let index in allImgs)
-也可以使用Array.forEach：
-12345678function logArrayElements(element, index, array) &#123;  console.log("a[" + index + 
-          ...
+          <h2 id="1-三元操作符"><a href="#1-三元操作符" class="headerlink" title="1.三元操作符"></a>1.三元操作符</h2><p>当想写if…else语句时，使用三元操作符来代替。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> x = <span class="number">20</span>;</div><div class="line"><span class="keyword">let</span> answer;</div><div class="line"><span class="keyword">if</span> (x &gt; <span class="number">10</span>) &#123;</div><div class="line">    answer = <span class="string">'is greater'</span>;</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">    answer = <span class="string">'is lesser'</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/hello-world/#more" rel="contents">
