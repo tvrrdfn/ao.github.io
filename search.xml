@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[使用markdown自动生成Restfull风格的文档]]></title>
     <url>%2F%E4%BD%BF%E7%94%A8markdown%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90Restfull%E9%A3%8E%E6%A0%BC%E7%9A%84%E6%96%87%E6%A1%A3%2F</url>
-    <content type="text"><![CDATA[mkdocs环境搭建pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。安装都比较简单，windows下需要配置环境变量。mac 已经自带python，但是ipython要自己安装。 1.安装 pip123sudo easy_install pip// 如果执行报错，可以执行： sudo easy_install -U pip 2.使用pip安装mkdocs1234pip install mkdocspip install mkdocs-material// mkdocs-material 是一款主题 3 启动在docs项目根路径下运行mkdocs serve命令，mkdocs内置server会将markdown编译成html并部署到8000端口，直接 http://localhost:8000 访问就可以了。]]></content>
+    <content type="text"><![CDATA[mkdocs环境搭建pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。安装都比较简单，windows下需要配置环境变量。mac 已经自带python，但是ipython要自己安装。 1.安装 pip123sudo easy_install pip// 如果执行报错，可以执行： sudo easy_install -U pip 2.使用pip安装mkdocs1234pip install mkdocspip install mkdocs-material// mkdocs-material 是一款主题 3 启动1mkdocs serve mkdocs内置server会将markdown编译成html并部署到8000端口，直接 http://localhost:8000 访问就可以了。]]></content>
   </entry>
   <entry>
     <title><![CDATA[Vue 动态组件]]></title>
