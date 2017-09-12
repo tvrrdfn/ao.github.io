@@ -382,144 +382,11 @@
 
       
         
-          
-          mkdocs环境搭建pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。安装都比较简单，windows下需要配置环境变量。mac 已经自带python，但是ipython要自己安装。
-1.安装 pip123sudo easy_install pip// 如果执行报错，可以执行： sudo easy_install -U pip
-2.使用pip安装mkdocs1234pip install mkdocspip install mkdocs-material// mkdocs-material 是一款主题
-3 启动1mkdocs serve
-mkdocs内置server会将markdown编译成html并部署到8000端口，直接 http://localhost:8000 访问就可以了。
-
-          
+          <h3 id="mkdocs环境搭建"><a href="#mkdocs环境搭建" class="headerlink" title="mkdocs环境搭建"></a>mkdocs环境搭建</h3><p>pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。<br>安装都比较简单，windows下需要配置环境变量。<br>mac 已经自带python，但是ipython要自己安装。</p>
+<h5 id="1-安装-pip"><a href="#1-安装-pip" class="headerlink" title="1.安装 pip"></a>1.安装 pip</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo easy_install pip</div><div class="line"></div><div class="line"><span class="comment">// 如果执行报错，可以执行： sudo easy_install -U pip</span></div></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/使用markdown自动生成Restfull风格的文档/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://tvrrdfn.github.io/Vue-动态组件/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Ao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/luffy.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="皓淼风来远">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/Vue-动态组件/" itemprop="url">
-                  Vue 动态组件
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-08T17:26:15+08:00">
-                2017-08-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          翻译自 Dynamic Components in Vue.js这篇文章将会教你如何使用Vue中的动态组件。当创建小型的单页应用时，这些小型应用可能并不需要vue-router来控制路由，我们只想简单地切换不同的组件来达到不同的展示效果。Vue中的动态组件要求你指定一个挂载点，在这个挂载点下你可以动态地切换组件。在这篇教程中，我们将通过几个例子来展示如何使用动态组件。我们会创建一个动态组件，学习使用keep-alive指令参数，最后我们还会在组件的切换之间添加一些过渡效果。下面开始吧：创建动态组件假设我们正在为一个Blog做个简单的导航栏，我们想添加两个页面：一个用于管理已经存在的博客文章一个用于创建新的博客文章稍后，我们会组件化这两个页面。现在，让我们从头一步步来吧，我们把这个简单的应用挂载到body下：new Vue({  el: ‘body’})添加导航栏，在头部引入BootStrop 3.3.6：                    Manage Posts                    Create Post              Admin Panel运行程序，我们会得到如下图所示的效果：现在，我们这个小小的应用已经有了一个大概的结构，下面我们开始创建两个组件：一个用于管理已经存在的博客文章，一个用于创建新的博客文章。如果你还不了解如何在Vue中创建组件，建议你看看这个教程，或者看官方的教程，那里已经说得够明白了。下面创建一个manage-posts组件，并模拟一些文章标题数据：Vue.component(‘manage-posts’, {  template: ‘#manage-template’,  data: function() {    return {      posts: [        ‘Vue.js: The Basics‘,        ‘Vue.js Components‘,        ‘Server Side Rendering with Vue‘,        ‘Vue + Firebase‘      ]    }  }})接着为组件manage-posts创建一个模板：目前为止，我们已经有了导航栏和mange-posts组件，下面我们添加create-post组件，并把它们结合起来：Vue.comp
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/Vue-动态组件/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1037,7 +904,7 @@ mkdocs内置server会将markdown编译成html并部署到8000端口，直接 htt
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
