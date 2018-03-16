@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[如何让git文件名大小写敏感]]></title>
+    <url>%2F%E5%A6%82%E4%BD%95%E8%AE%A9git%E6%96%87%E4%BB%B6%E5%90%8D%E5%A4%A7%E5%B0%8F%E5%86%99%E6%95%8F%E6%84%9F%2F</url>
+    <content type="text"><![CDATA[git 默认不区分文件名大小写 当你创建一个文件后,叫 readme.md 写入内容后 提交到线上代码仓库. 然后你在本地修改文件名为 Readme.md 接着你去提交,发现代码没有变化. 1git status 无任何提示信息.其实 git 默认对于文件名大小写是不敏感的,所以上面你修改了首字母大写,但是git 并没有发现代码任何改动. 那么如何才能让 git 识别文件名大小写变化. 一 配置git 使其对文件名大小写敏感1git config core.ignorecase false 二 从git 本地仓库删除此文件,然后添加再提交(1) 删除1git rm readme.md (2) 重新添加1git add Readme.md (3)提交1git commit -m &apos;Readme.md&apos; 推荐第一种方法,配置好git 对文件名大小写敏感.]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何在Jenkins中给Git自动打Tag？]]></title>
     <url>%2F%E4%BD%BF%E7%94%A8Jenkins%E7%BB%99Git%E8%87%AA%E5%8A%A8%E6%89%93Tag%2F</url>
     <content type="text"><![CDATA[如果希望能在每次发布操作后，及时的打上Tag。我们可以在Jenkins中通过利用GIT Publisher这个插件来完成需求. 插件依赖GIT Publisher 操作及配置 在 构建后操作 中选择 GIT Publisher。 点击 Add Tag 按钮，出现设置界面。 Tag to push 可以按分支添加标签格式，例如：master-$BUILD_ID. $BUILD可以根据实际情况替换成其他变量，例如时间戳。 Create new tag 一定要勾选。 Target remote name 默认填入 origin 以上完成，在下次执行任务的时候就能自动在Git上打Tag了。 资源 Jenkins的插件安装及管理]]></content>
