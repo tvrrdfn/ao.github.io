@@ -89,17 +89,17 @@
 
 
 
-<meta name="description" content="mkdocs环境搭建pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。安装都比较简单，windows下需要配置环境变量。mac 已经自带python，但是ipython要自己安装。 1.安装 pip123sudo easy_install pip// 如果执行报错，可以执行： sudo easy_install -U pip">
+<meta name="description" content="问题用Webpack打包，时常会遇到打包后文件偏大的问题，一般有哪些优化手段？ 合并公共代码将一些公共的代码和共同引用的第三方类库单独打包，同时将reactJs相关的类库单独打包。如：12345678entry: &amp;#123;        index: [            &amp;apos;./src/index.js&amp;apos;        ],        antd: [&amp;apos;an">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用markdown自动生成Restfull风格的文档">
-<meta property="og:url" content="https://tvrrdfn.github.io/使用markdown自动生成Restfull风格的文档/index.html">
+<meta property="og:title" content="webpack优化打包操作">
+<meta property="og:url" content="https://tvrrdfn.github.io/webpack优化打包/index.html">
 <meta property="og:site_name" content="皓淼风来远">
-<meta property="og:description" content="mkdocs环境搭建pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。安装都比较简单，windows下需要配置环境变量。mac 已经自带python，但是ipython要自己安装。 1.安装 pip123sudo easy_install pip// 如果执行报错，可以执行： sudo easy_install -U pip">
+<meta property="og:description" content="问题用Webpack打包，时常会遇到打包后文件偏大的问题，一般有哪些优化手段？ 合并公共代码将一些公共的代码和共同引用的第三方类库单独打包，同时将reactJs相关的类库单独打包。如：12345678entry: &amp;#123;        index: [            &amp;apos;./src/index.js&amp;apos;        ],        antd: [&amp;apos;an">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-12T11:50:01.000Z">
+<meta property="og:updated_time" content="2018-05-23T10:51:01.984Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用markdown自动生成Restfull风格的文档">
-<meta name="twitter:description" content="mkdocs环境搭建pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。安装都比较简单，windows下需要配置环境变量。mac 已经自带python，但是ipython要自己安装。 1.安装 pip123sudo easy_install pip// 如果执行报错，可以执行： sudo easy_install -U pip">
+<meta name="twitter:title" content="webpack优化打包操作">
+<meta name="twitter:description" content="问题用Webpack打包，时常会遇到打包后文件偏大的问题，一般有哪些优化手段？ 合并公共代码将一些公共的代码和共同引用的第三方类库单独打包，同时将reactJs相关的类库单独打包。如：12345678entry: &amp;#123;        index: [            &amp;apos;./src/index.js&amp;apos;        ],        antd: [&amp;apos;an">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="https://tvrrdfn.github.io/使用markdown自动生成Restfull风格的文档/"/>
+  <link rel="canonical" href="https://tvrrdfn.github.io/webpack优化打包/"/>
 
 
 
 
 
-  <title> 使用markdown自动生成Restfull风格的文档 | 皓淼风来远 </title>
+  <title> webpack优化打包操作 | 皓淼风来远 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -306,7 +306,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://tvrrdfn.github.io/使用markdown自动生成Restfull风格的文档/">
+    <link itemprop="mainEntityOfPage" href="https://tvrrdfn.github.io/webpack优化打包/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ao">
@@ -327,7 +327,7 @@
             
             
               
-                使用markdown自动生成Restfull风格的文档
+                webpack优化打包操作
               
             
           </h1>
@@ -342,8 +342,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-11T11:04:22+08:00">
-                2017-09-11
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-23T18:39:52+08:00">
+                2018-05-23
               </time>
             
 
@@ -378,13 +378,22 @@
       
 
       
-        <h3 id="mkdocs环境搭建"><a href="#mkdocs环境搭建" class="headerlink" title="mkdocs环境搭建"></a>mkdocs环境搭建</h3><p>pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。<br>安装都比较简单，windows下需要配置环境变量。<br>mac 已经自带python，但是ipython要自己安装。</p>
-<h5 id="1-安装-pip"><a href="#1-安装-pip" class="headerlink" title="1.安装 pip"></a>1.安装 pip</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo easy_install pip</div><div class="line"></div><div class="line"><span class="comment">// 如果执行报错，可以执行： sudo easy_install -U pip</span></div></pre></td></tr></table></figure>
+        <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>用Webpack打包，时常会遇到打包后文件偏大的问题，一般有哪些优化手段？</p>
+<h4 id="合并公共代码"><a href="#合并公共代码" class="headerlink" title="合并公共代码"></a>合并公共代码</h4><p>将一些公共的代码和共同引用的第三方类库单独打包，同时将reactJs相关的类库单独打包。<br>如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">entry: &#123;</div><div class="line">        index: [</div><div class="line">            &apos;./src/index.js&apos;</div><div class="line">        ],</div><div class="line">        antd: [&apos;antd&apos;],</div><div class="line">        vue: [&apos;vue&apos;, &apos;vue-route&apos;],</div><div class="line">        vendors: [&apos;crypto-js&apos;, &apos;history&apos;, &apos;isomorphic-fetch&apos;, &apos;jquery&apos;, &apos;lodash&apos;]</div><div class="line">    &#125;,</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<h5 id="2-使用pip安装mkdocs"><a href="#2-使用pip安装mkdocs" class="headerlink" title="2.使用pip安装mkdocs"></a>2.使用pip安装mkdocs</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">pip install mkdocs</div><div class="line">pip install mkdocs-material</div><div class="line"></div><div class="line"><span class="comment">// mkdocs-material 是一款主题</span></div></pre></td></tr></table></figure>
-<h5 id="3-启动"><a href="#3-启动" class="headerlink" title="3 启动"></a>3 启动</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdocs serve</div></pre></td></tr></table></figure>
-<p>mkdocs内置server会将markdown编译成html并部署到8000端口，直接 <a href="http://localhost:8000" target="_blank" rel="external">http://localhost:8000</a> 访问就可以了。</p>
-
+<p>以上将antd、vue以及一些工具类分别单独打包出来。具体的使用可以参考：</p>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000006808865" target="_blank" rel="external">webpack CommonsChunkPlugin详细教程</a></li>
+<li><a href="https://webpack.js.org/plugins/commons-chunk-plugin/" target="_blank" rel="external">CommonsChunkPlugin</a></li>
+</ul>
+<h4 id="devtool-中的-source-map"><a href="#devtool-中的-source-map" class="headerlink" title="devtool 中的 source-map"></a>devtool 中的 source-map</h4><p>source-map在调试的时候非常好用。但是在生产环境下应该关闭它，设置为：<code>devtool: false</code>。</p>
+<p>这些source-map有哪些区别呢？可以参考：<a href="https://segmentfault.com/a/1190000004280859" target="_blank" rel="external">webpack sourcemap 选项多种模式的一些解释</a></p>
+<h4 id="使用UglifyJsPlugin压缩文件"><a href="#使用UglifyJsPlugin压缩文件" class="headerlink" title="使用UglifyJsPlugin压缩文件"></a>使用UglifyJsPlugin压缩文件</h4><p>使用UglifyJsPlugin压缩文件，并且去掉注释。可以让打包后的文件大小少了很多。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">new webpack.optimize.UglifyJsPlugin(&#123;</div><div class="line">  comments: false,        //去掉注释</div><div class="line">  compress: &#123;</div><div class="line">  	warnings: false    //忽略警告,要不然会有一大堆的黄色字体出现……</div><div class="line">  &#125;</div><div class="line">&#125;),</div></pre></td></tr></table></figure></p>
+<h4 id="分离CSS样式"><a href="#分离CSS样式" class="headerlink" title="分离CSS样式"></a>分离CSS样式</h4><p>分离CSS样式原先就这么做了，这里还是再拿出来讲一下。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">new ExtractTextPlugin(&apos;index_[contenthash].css&apos;, &#123;</div><div class="line">    allChunks: true</div><div class="line">&#125;),</div></pre></td></tr></table></figure></p>
+<h4 id="使用DedupePlugin"><a href="#使用DedupePlugin" class="headerlink" title="使用DedupePlugin"></a>使用DedupePlugin</h4><p>使用DedupePlugin插件可以找到Js的依赖树，并且删除这些重复的依赖</p>
+<h4 id="开启gzip压缩"><a href="#开启gzip压缩" class="headerlink" title="开启gzip压缩"></a>开启gzip压缩</h4><p>经过以上的步骤以后打包出来的文件已经小了很多了，但还是不太满意。通过使用gzip压缩可以进一步减少文件的大小，就是有个缺点是打包的时候会慢一些。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">new CompressionWebpackPlugin(&#123; //gzip 压缩</div><div class="line">    asset: &apos;[path].gz[query]&apos;,</div><div class="line">    algorithm: &apos;gzip&apos;,</div><div class="line">    test: new RegExp(</div><div class="line">        &apos;\\.(js|css)$&apos;    //压缩 js 与 css</div><div class="line">    ),</div><div class="line">    threshold: 10240,</div><div class="line">    minRatio: 0.8</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<h4 id="HtmlWebpackPlugin中的设置"><a href="#HtmlWebpackPlugin中的设置" class="headerlink" title="HtmlWebpackPlugin中的设置"></a>HtmlWebpackPlugin中的设置</h4><p>设置minify属性的值：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">new HtmlWebpackPlugin(&#123;</div><div class="line">    title: &apos;项目官网 3.0&apos;,</div><div class="line">    template: &apos;index-template.html&apos;,</div><div class="line">    inject: &apos;body&apos;,</div><div class="line">    minify: &#123;</div><div class="line">        removeComments: true,        //去注释</div><div class="line">        collapseWhitespace: true,    //压缩空格</div><div class="line">        removeAttributeQuotes: true  //去除属性引用</div><div class="line">    &#125;</div><div class="line">&#125;),</div></pre></td></tr></table></figure></p>
+<h4 id="cdn"><a href="#cdn" class="headerlink" title="cdn"></a>cdn</h4>
       
     </div>
 
@@ -420,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/ES6/" rel="next" title="ES6新特性列表">
-                <i class="fa fa-chevron-left"></i> ES6新特性列表
+              <a href="/Wordpress-利用Rest-API/" rel="next" title="Wordpress 利用Rest API">
+                <i class="fa fa-chevron-left"></i> Wordpress 利用Rest API
               </a>
             
           </div>
@@ -429,10 +438,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/如何管理好10万行代码的前端单页面应用/" rel="prev" title="node版本管理工具nvm-Mac下安装及使用">
-                node版本管理工具nvm-Mac下安装及使用 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -623,7 +628,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#mkdocs环境搭建"><span class="nav-number">1.</span> <span class="nav-text">mkdocs环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-安装-pip"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.安装 pip</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-使用pip安装mkdocs"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.使用pip安装mkdocs</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-启动"><span class="nav-number">1.0.3.</span> <span class="nav-text">3 启动</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#合并公共代码"><span class="nav-number">2.</span> <span class="nav-text">合并公共代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#devtool-中的-source-map"><span class="nav-number">3.</span> <span class="nav-text">devtool 中的 source-map</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用UglifyJsPlugin压缩文件"><span class="nav-number">4.</span> <span class="nav-text">使用UglifyJsPlugin压缩文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分离CSS样式"><span class="nav-number">5.</span> <span class="nav-text">分离CSS样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用DedupePlugin"><span class="nav-number">6.</span> <span class="nav-text">使用DedupePlugin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开启gzip压缩"><span class="nav-number">7.</span> <span class="nav-text">开启gzip压缩</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HtmlWebpackPlugin中的设置"><span class="nav-number">8.</span> <span class="nav-text">HtmlWebpackPlugin中的设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cdn"><span class="nav-number">9.</span> <span class="nav-text">cdn</span></a></li></ol></div>
             
 
           </div>

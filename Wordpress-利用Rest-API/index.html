@@ -89,17 +89,17 @@
 
 
 
-<meta name="description" content="mkdocs环境搭建pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。安装都比较简单，windows下需要配置环境变量。mac 已经自带python，但是ipython要自己安装。 1.安装 pip123sudo easy_install pip// 如果执行报错，可以执行： sudo easy_install -U pip">
+<meta name="description" content="wordpress res api接口文档地址：https://developer.wordpress.org/rest-api/  如何调用wordpress系统提供的REST API接口？ 安装插件WT Authentication for WP REST API 依据插件说明：  a. 修改.htaccess文件  1234RewriteEngine on   RewriteCond %&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用markdown自动生成Restfull风格的文档">
-<meta property="og:url" content="https://tvrrdfn.github.io/使用markdown自动生成Restfull风格的文档/index.html">
+<meta property="og:title" content="Wordpress 利用Rest API">
+<meta property="og:url" content="https://tvrrdfn.github.io/Wordpress-利用Rest-API/index.html">
 <meta property="og:site_name" content="皓淼风来远">
-<meta property="og:description" content="mkdocs环境搭建pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。安装都比较简单，windows下需要配置环境变量。mac 已经自带python，但是ipython要自己安装。 1.安装 pip123sudo easy_install pip// 如果执行报错，可以执行： sudo easy_install -U pip">
+<meta property="og:description" content="wordpress res api接口文档地址：https://developer.wordpress.org/rest-api/  如何调用wordpress系统提供的REST API接口？ 安装插件WT Authentication for WP REST API 依据插件说明：  a. 修改.htaccess文件  1234RewriteEngine on   RewriteCond %&amp;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-12T11:50:01.000Z">
+<meta property="og:updated_time" content="2018-05-18T07:15:18.123Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用markdown自动生成Restfull风格的文档">
-<meta name="twitter:description" content="mkdocs环境搭建pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。安装都比较简单，windows下需要配置环境变量。mac 已经自带python，但是ipython要自己安装。 1.安装 pip123sudo easy_install pip// 如果执行报错，可以执行： sudo easy_install -U pip">
+<meta name="twitter:title" content="Wordpress 利用Rest API">
+<meta name="twitter:description" content="wordpress res api接口文档地址：https://developer.wordpress.org/rest-api/  如何调用wordpress系统提供的REST API接口？ 安装插件WT Authentication for WP REST API 依据插件说明：  a. 修改.htaccess文件  1234RewriteEngine on   RewriteCond %&amp;">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="https://tvrrdfn.github.io/使用markdown自动生成Restfull风格的文档/"/>
+  <link rel="canonical" href="https://tvrrdfn.github.io/Wordpress-利用Rest-API/"/>
 
 
 
 
 
-  <title> 使用markdown自动生成Restfull风格的文档 | 皓淼风来远 </title>
+  <title> Wordpress 利用Rest API | 皓淼风来远 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -306,7 +306,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://tvrrdfn.github.io/使用markdown自动生成Restfull风格的文档/">
+    <link itemprop="mainEntityOfPage" href="https://tvrrdfn.github.io/Wordpress-利用Rest-API/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ao">
@@ -327,7 +327,7 @@
             
             
               
-                使用markdown自动生成Restfull风格的文档
+                Wordpress 利用Rest API
               
             
           </h1>
@@ -342,8 +342,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-11T11:04:22+08:00">
-                2017-09-11
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-15T19:29:25+08:00">
+                2018-05-15
               </time>
             
 
@@ -378,12 +378,42 @@
       
 
       
-        <h3 id="mkdocs环境搭建"><a href="#mkdocs环境搭建" class="headerlink" title="mkdocs环境搭建"></a>mkdocs环境搭建</h3><p>pip是Python的包管理器，类似于nodejs中的npm、ruby的gem。<br>安装都比较简单，windows下需要配置环境变量。<br>mac 已经自带python，但是ipython要自己安装。</p>
-<h5 id="1-安装-pip"><a href="#1-安装-pip" class="headerlink" title="1.安装 pip"></a>1.安装 pip</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo easy_install pip</div><div class="line"></div><div class="line"><span class="comment">// 如果执行报错，可以执行： sudo easy_install -U pip</span></div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h5 id="2-使用pip安装mkdocs"><a href="#2-使用pip安装mkdocs" class="headerlink" title="2.使用pip安装mkdocs"></a>2.使用pip安装mkdocs</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">pip install mkdocs</div><div class="line">pip install mkdocs-material</div><div class="line"></div><div class="line"><span class="comment">// mkdocs-material 是一款主题</span></div></pre></td></tr></table></figure>
-<h5 id="3-启动"><a href="#3-启动" class="headerlink" title="3 启动"></a>3 启动</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdocs serve</div></pre></td></tr></table></figure>
-<p>mkdocs内置server会将markdown编译成html并部署到8000端口，直接 <a href="http://localhost:8000" target="_blank" rel="external">http://localhost:8000</a> 访问就可以了。</p>
+        <blockquote>
+<p>wordpress res api接口文档地址：<a href="https://developer.wordpress.org/rest-api/" target="_blank" rel="external">https://developer.wordpress.org/rest-api/</a></p>
+</blockquote>
+<h5 id="如何调用wordpress系统提供的REST-API接口？"><a href="#如何调用wordpress系统提供的REST-API接口？" class="headerlink" title="如何调用wordpress系统提供的REST API接口？"></a>如何调用wordpress系统提供的REST API接口？</h5><ol>
+<li>安装插件WT Authentication for WP REST API</li>
+<li><p>依据插件说明：</p>
+<p> a. 修改.htaccess文件</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">RewriteEngine on</div><div class="line">   RewriteCond %&#123;HTTP:Authorization&#125; ^(.*)</div><div class="line">   RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]</div><div class="line">   SetEnvIf Authorization &quot;(.*)&quot; HTTP_AUTHORIZATION=$1</div></pre></td></tr></table></figure>
+<p> b.修改wp-config.php</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">   define(&apos;JWT_AUTH_SECRET_KEY&apos;, &apos;your-top-secrect-key&apos;);</div><div class="line">define(&apos;JWT_AUTH_CORS_ENABLE&apos;, true);</div></pre></td></tr></table></figure>
+<p> 其中’your-top-secrect-key’ 可以参考 <a href="https://api.wordpress.org/secret-key/1.1/salt/" target="_blank" rel="external">https://api.wordpress.org/secret-key/1.1/salt/</a> 生成的数值，比如：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">define(&apos;JWT_AUTH_SECRET_KEY&apos;, &apos;[&amp;r5o3qE!u+C0z)/C650T-~`1Xnl+T_TWdZ||l(m0(+^@t!WS4=bN/7|Iek-0*(v&apos;);</div></pre></td></tr></table></figure>
+ <a id="more"></a>
+<p> c.在js中请求token，然后在编辑等操作时在header中附带上token值</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">$.ajax(&#123;</div><div class="line">  url:&quot;http://localhost/wp-json/jwt-auth/v1/token&quot;,</div><div class="line">  method:&quot;POST&quot;,</div><div class="line">  data:&#123;</div><div class="line">    username:&quot;admin&quot;,</div><div class="line">    password:&quot;123456&quot;</div><div class="line">  &#125;,</div><div class="line">  success:function(res)&#123;</div><div class="line">    console.log(res);</div><div class="line">    Token = res.token;</div><div class="line">    $.ajax(&#123;</div><div class="line">      url:&quot;http://localhost/wp-json/wp/v2/posts/1&quot;,</div><div class="line">      method:&quot;POST&quot;,</div><div class="line">      beforeSend: function(xhr) &#123;</div><div class="line">        xhr.setRequestHeader(&quot;Authorization&quot;, &quot;Bearer &quot; + Token);</div><div class="line">      &#125;,</div><div class="line">      data:&#123;</div><div class="line">        &quot;title&quot;:&quot;hello api&quot;</div><div class="line">      &#125;,</div><div class="line">      success:function(res)&#123;</div><div class="line">        console.log(res);</div><div class="line">      &#125;,</div><div class="line">      error:function(res)&#123;</div><div class="line">        console.log(res);</div><div class="line">      &#125;</div><div class="line">    &#125;);</div><div class="line">  &#125;,</div><div class="line">  error:function(res)&#123;</div><div class="line">    console.log(res);</div><div class="line">  &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<blockquote>
+<p>有需要校验的依据上述方法即可实现校验</p>
+</blockquote>
+</li>
+</ol>
+<h5 id="如何使用插件实现自定义REST-API接口？"><a href="#如何使用插件实现自定义REST-API接口？" class="headerlink" title="如何使用插件实现自定义REST API接口？"></a>如何使用插件实现自定义REST API接口？</h5><p>1.安装插件【JSON API】<br>2.在插件目录 wp-content/plugins/json-api/controllers/文件夹下建立自己的接口文件，例如：test.php, 内容如下：<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">     class JSON_API_Test_Controller &#123;</div><div class="line">         public function test_info() &#123;</div><div class="line">             return array(</div><div class="line">                 &quot;data&quot; =&gt; get_option(&apos;test_info&apos;),</div><div class="line">             );</div><div class="line">         &#125;</div><div class="line">     &#125;</div><div class="line">   ?&gt;</div></pre></td></tr></table></figure></p>
+<p>3.依上设置后，会在后台设置 - JSON API下看到test的选项，启用test。即可通过接口获取到test_info信息，接口地址如下：<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xxx.com/api/test/test_info/</div></pre></td></tr></table></figure></p>
+<h5 id="如何在后台新增菜单项"><a href="#如何在后台新增菜单项" class="headerlink" title="如何在后台新增菜单项"></a>如何在后台新增菜单项</h5><ol>
+<li><p>如何插入test_info内容。可以自定义菜单项。在当前模板下的 functions.php文件下，添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * 轮播图</div><div class="line"> */</div><div class="line">function wpdocs_register_my_silder() &#123;</div><div class="line">	add_menu_page(&apos;Silder&apos;, &apos;轮播图设置&apos;, &apos;manage_options&apos;, __FILE__, &apos;mySilderSettings&apos;);</div><div class="line">&#125;</div><div class="line">function mySilderSettings() &#123;</div><div class="line">	require get_template_directory() . &apos;/my-plugins/slider/slider.php&apos;;</div><div class="line">&#125;</div><div class="line">add_action(&apos;admin_menu&apos;, &apos;wpdocs_register_my_silder&apos;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>如果想在slider中实现ajax提交数据，则在模板下的 functions.php文件下，添加一下代码，关键字是 my_slider; update_option是存储对应的字段</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">add_action(&apos;wp_ajax_nopriv_my_test&apos;, &apos;my_test&apos;);</div><div class="line">add_action(&apos;wp_ajax_my_test&apos;, &apos;my_test&apos;);</div><div class="line">function my_test() &#123;</div><div class="line">	global $wpdb, $post;</div><div class="line"></div><div class="line">	// //若值为空，则删除这行数据</div><div class="line">	if (empty($_POST[&apos;my-test-info&apos;])) &#123;</div><div class="line">		echo &apos;empty&apos;;</div><div class="line">		delete_option(&apos;test_info&apos;);</div><div class="line">	&#125; else &#123;</div><div class="line">		echo &apos;dadad&apos;;</div><div class="line">		//若提交了表单，则保存变量</div><div class="line">		update_option(&apos;test_info&apos;, $_POST[&apos;my-test-info&apos;]);</div><div class="line">	&#125;</div><div class="line">	die;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>在提交ajax的代码应该如下,只能提交到 /wp-admin/admin-ajax.php 文件下。action字段需和上面的关键字对应。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">var ajax_data = &#123;   </div><div class="line">  action: &quot;my_test&quot;,   </div><div class="line">  &apos;my-slider-info&apos;: &quot;test info!!!!&quot;</div><div class="line">&#125;;</div><div class="line">jQuery.ajax(&#123;</div><div class="line">  url: &quot;/wp-admin/admin-ajax.php&quot;,</div><div class="line">  data: ajax_data,</div><div class="line">  type: &apos;POST&apos;,</div><div class="line">  beforeSend: function() &#123;</div><div class="line">  	loading(true);</div><div class="line">  &#125;,</div><div class="line">  complete: function() &#123;</div><div class="line">  	loading(false);</div><div class="line">  &#125;,</div><div class="line">  error: function(response) &#123;</div><div class="line">  	console.log(response)</div><div class="line">  &#125;,</div><div class="line">  success: function(response) &#123;</div><div class="line">    console.log(response);</div><div class="line">    loading(false);</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p>如上添加后，可以结合自定义REST API接口，实现自定义设置界面接rest api接口的调用。比如上述的调用接口地址是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">xxx.com/api/test/test_info/</div><div class="line">   </div><div class="line">   return &#123;</div><div class="line">   	status: &quot;ok&quot;,</div><div class="line">       data: &apos;test info!!!!&apos;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+</li>
+</ol>
 
       
     </div>
@@ -420,8 +450,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/ES6/" rel="next" title="ES6新特性列表">
-                <i class="fa fa-chevron-left"></i> ES6新特性列表
+              <a href="/移动端-手机端-页面自适应解决方案—rem布局/" rel="next" title="移动端页面自适应解决方案—rem布局">
+                <i class="fa fa-chevron-left"></i> 移动端页面自适应解决方案—rem布局
               </a>
             
           </div>
@@ -430,8 +460,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/如何管理好10万行代码的前端单页面应用/" rel="prev" title="node版本管理工具nvm-Mac下安装及使用">
-                node版本管理工具nvm-Mac下安装及使用 <i class="fa fa-chevron-right"></i>
+              <a href="/webpack优化打包/" rel="prev" title="webpack优化打包操作">
+                webpack优化打包操作 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -623,7 +653,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#mkdocs环境搭建"><span class="nav-number">1.</span> <span class="nav-text">mkdocs环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-安装-pip"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.安装 pip</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-使用pip安装mkdocs"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.使用pip安装mkdocs</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-启动"><span class="nav-number">1.0.3.</span> <span class="nav-text">3 启动</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#如何调用wordpress系统提供的REST-API接口？"><span class="nav-number">1.</span> <span class="nav-text">如何调用wordpress系统提供的REST API接口？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#如何使用插件实现自定义REST-API接口？"><span class="nav-number">2.</span> <span class="nav-text">如何使用插件实现自定义REST API接口？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#如何在后台新增菜单项"><span class="nav-number">3.</span> <span class="nav-text">如何在后台新增菜单项</span></a></li></ol></div>
             
 
           </div>
